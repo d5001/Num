@@ -9,7 +9,7 @@ public class Num {
     public Num(String num){
         this.num = num;
     }
-
+    
     public String sze(int jz){//十进制转任意进制
         StringBuilder n = new StringBuilder();
         int i = Integer.parseInt(num);
@@ -55,5 +55,13 @@ public class Num {
             m--;
         }
         return String.valueOf(n);
+    }
+    
+    public String getNum(){
+        return num;
+    }
+
+    public String toString(){
+        return "Num:" + num;
     }
 }
